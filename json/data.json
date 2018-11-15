@@ -1,0 +1,25 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "eventName": "Mega Eventorasdasd!",
+      "eventPrice": 4500,
+      "eventDate": "2018-11-10",
+      "eventTime": "09:00:00"
+    },
+    {
+      "id": 2,
+      "eventName": "Mega Eventos!",
+      "eventPrice": 123,
+      "eventDate": "2018-11-10",
+      "eventTime": "09:00:00"
+    },
+    {
+      "eventName": "Mega Eventos!",
+      "eventPrice": "123",
+      "eventDate": "2018-11-10",
+      "eventTime": "09:00:00",
+      "id": 3
+    }
+  ]
+}
