@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <h2>Ejemplo AJAX</h2>
+    <form id="create_event" action="http://localhost:3000/events" method="POST">
+      <input id="1" type="text" name="eventName" placeholder="Nombre Evento" value="">
+      <input id="2" type="number" name="eventPrice" placeholder="Precio" value="">
+      <input id="3" type="date" name="eventDate" placeholder="Fecha" value="">
+      <input id="4" type="time" name="eventTime" placeholder="Hora" value="">
+      <input id="5" type="submit" value="Enviar">
+    </form>
+    <hr class="divider"/>
+  </section>
+  <section>
+    <h2>Eventos</h2>
+    <hr class="divider" />
+    <div id="ticketPrinter"></div>
+  </section>
+
+</body>
+  <script type="text/JavaScript" src="jquery.min.js"></script>
+  <script type="text/JavaScript" src="miAjaxScript.js"></script>
+</html>
