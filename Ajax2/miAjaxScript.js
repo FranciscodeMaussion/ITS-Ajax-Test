@@ -31,7 +31,7 @@ function llamarAlServidorYProcesar(){
   });
 }
 
-// Equivalente del document.omload
+// Equivalente del document.onload
 $(function() {
     llamarAlServidorYProcesar();
 });
@@ -39,10 +39,9 @@ $(function() {
 // Crea el evento haciendo un POST
 $("#create_event").submit(function(e) {
   var form = $(this);
-  var url = form.attr('action');
   $.ajax({
-    method: "POST",
-    url: urlEvents,
+    method: form.attr('method'),
+    url: form.attr('action'),
     data: form.serialize(), // Transforma el form en json
     success: function( result ) {
       //Agrego el ticket(generado en printTicket) al html

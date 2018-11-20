@@ -1,18 +1,79 @@
 {
+  "otro": [
+    {
+      "oso": "azules"
+    }
+  ],
   "events": [
     {
-      "eventName": "werwerwer",
-      "eventPrice": "234234",
+      "eventName": "Ozuna",
+      "eventPrice": "6000",
       "eventDate": "2018-11-21",
       "eventTime": "12:00",
       "id": 6
     },
     {
-      "eventName": "werwerwer",
-      "eventPrice": "234234",
+      "eventName": "Taylor Swift",
+      "eventPrice": "100",
       "eventDate": "2018-11-21",
-      "eventTime": "12:00",
+      "eventTime": "22:00",
       "id": 7
+    },
+    {
+      "eventName": "Mezi",
+      "eventPrice": "5000",
+      "eventDate": "2018-11-10",
+      "eventTime": "20:10",
+      "id": 8
+    },
+    {
+      "eventName": "",
+      "eventPrice": "",
+      "eventDate": "",
+      "eventTime": "",
+      "id": 9
+    },
+    {
+      "eventName": "",
+      "eventPrice": "",
+      "eventDate": "",
+      "eventTime": "",
+      "id": 10
+    },
+    {
+      "eventName": "",
+      "eventPrice": "",
+      "eventDate": "",
+      "eventTime": "",
+      "id": 11
+    },
+    {
+      "eventName": "",
+      "eventPrice": "",
+      "eventDate": "",
+      "eventTime": "",
+      "id": 12
+    },
+    {
+      "eventName": "",
+      "eventPrice": "",
+      "eventDate": "",
+      "eventTime": "",
+      "id": 13
+    },
+    {
+      "eventName": "",
+      "eventPrice": "",
+      "eventDate": "",
+      "eventTime": "",
+      "id": 14
+    },
+    {
+      "eventName": "",
+      "eventPrice": "",
+      "eventDate": "",
+      "eventTime": "",
+      "id": 15
     }
   ]
 }
