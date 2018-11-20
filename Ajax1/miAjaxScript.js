@@ -1,5 +1,7 @@
 var invocation = new XMLHttpRequest();
 var url = 'http://localhost:3000/events';
+
+// Realiza el get de los eventos
 function llamarAlServidorYProcesar(){
   if(invocation)
     {
@@ -11,6 +13,7 @@ function llamarAlServidorYProcesar(){
             console.log(obj);
             console.log(this.responseText);
             document.getElementById("content").innerHTML = "";
+            // Itera y agrega al html
             for (var i = 0; i < obj.length; i++) {
               document.getElementById("content").innerHTML += obj[i].eventName;
             }
@@ -20,6 +23,7 @@ function llamarAlServidorYProcesar(){
     }
 }
 
+// Listeners
 document.getElementById("obtenerInfoBtn").onclick = function(){
   llamarAlServidorYProcesar();
 };
@@ -27,12 +31,10 @@ document.getElementById("obtenerInfoBtn").onclick = function(){
 document.getElementById("enviarInfoBtn").onclick = function(){
   lamarAlServidorYEnviar();
 };
-// invocation.setRequestHeader('Access-Control-Allow-Origin', '*');
-// invocation.setRequestHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-// invocation.setRequestHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-// invocation.setRequestHeader('Access-Control-Allow-Credentials', true);
 
+// Realiza un POST
 function lamarAlServidorYEnviar(){
+  // Prepara el objeto
   var data = {
     "eventName":"Mega Eventos!",
     "eventPrice":123,
@@ -43,17 +45,18 @@ function lamarAlServidorYEnviar(){
     invocation.open('POST', url, true);
     invocation.onreadystatechange =  function() {
         if(this.readyState == 4 && this.status == 200) {
-          // Request finished. Do processing here.
           var obj = JSON.parse(this.responseText);
           console.log(obj);
           console.log(this.responseText);
         }
     };
     invocation.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    // Envia la informacion al servidor
     invocation.send(clean(data));
   }
 }
 
+// Transforma el json en un string con &
 function clean(data){
   return Object.keys(data).map(
       function(k){ return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]) }

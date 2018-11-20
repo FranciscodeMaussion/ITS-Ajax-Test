@@ -21,6 +21,7 @@ function llamarAlServidorYProcesar(){
     success: function( result ) {
       console.log(result);
       $( "#ticketPrinter" ).empty();
+      // Itera sobre todos los eventos
       for (var i = 0; i < result.length; i++) {
         console.log(result[i]);
         //Agrego el ticket(generado en printTicket) al html
@@ -52,15 +53,15 @@ $("#create_event").submit(function(e) {
 });
 
 // Otra forma de hacer lo mismo
-// $("#5").on( "click", function( event ) {
+// $("#send").on( "click", function( event ) {
 //   $.ajax({
 //     method: "POST",
 //     url: urlEvents,
 //     data: {
-//       "eventName":$( "#1" ).val(),
-//       "eventPrice":$( "#2" ).val(),
-//       "eventDate":$( "#3" ).val(),
-//       "eventTime":$( "#4" ).val()
+//       "eventName":$( "#nombre" ).val(),
+//       "eventPrice":$( "#precio" ).val(),
+//       "eventDate":$( "#fecha" ).val(),
+//       "eventTime":$( "#tiempo" ).val()
 //     },
 //     success: function( result ) {
 //       //Agrego el ticket(generado en printTicket) al html
