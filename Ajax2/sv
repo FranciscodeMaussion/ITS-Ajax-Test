@@ -1,0 +1,4 @@
+#/bin/bash
+tilix -a session-add-right -e json-server --watch json/data.json # Uso tilix, deberian ver de usar su terminal.
+clear
+python -m SimpleHTTPServer 8000

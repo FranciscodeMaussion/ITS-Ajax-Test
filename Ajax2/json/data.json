@@ -1,32 +1,18 @@
 {
   "events": [
     {
-      "eventName": "",
-      "eventPrice": "",
-      "eventDate": "",
-      "eventTime": "",
-      "id": 1
+      "eventName": "werwerwer",
+      "eventPrice": "234234",
+      "eventDate": "2018-11-21",
+      "eventTime": "12:00",
+      "id": 6
     },
     {
-      "eventName": "",
-      "eventPrice": "",
-      "eventDate": "",
-      "eventTime": "",
-      "id": 2
-    },
-    {
-      "eventName": "",
-      "eventPrice": "",
-      "eventDate": "",
-      "eventTime": "",
-      "id": 3
-    },
-    {
-      "eventName": "",
-      "eventPrice": "",
-      "eventDate": "",
-      "eventTime": "",
-      "id": 4
+      "eventName": "werwerwer",
+      "eventPrice": "234234",
+      "eventDate": "2018-11-21",
+      "eventTime": "12:00",
+      "id": 7
     }
   ]
 }

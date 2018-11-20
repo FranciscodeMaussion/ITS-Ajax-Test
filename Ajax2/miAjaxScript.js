@@ -9,7 +9,7 @@ function printTicket(dataEvent) {
   divContent += '<p name="eventDate" class="alignRight">' + dataEvent.eventDate + ' - ' + dataEvent.eventTime + '</p></br>';
   divContent += '</div>';
 
-  //Agrego el nuevo ticket al html
+  //Devuelvo el nuevo ticket
   return divContent;
 }
 
@@ -23,13 +23,14 @@ function llamarAlServidorYProcesar(){
       $( "#ticketPrinter" ).empty();
       for (var i = 0; i < result.length; i++) {
         console.log(result[i]);
+        //Agrego el ticket(generado en printTicket) al html
         $( "#ticketPrinter" ).append(printTicket(result[i]));
       }
     }
   });
 }
 
-// equivalente del document.omload
+// Equivalente del document.omload
 $(function() {
     llamarAlServidorYProcesar();
 });
@@ -43,6 +44,7 @@ $("#create_event").submit(function(e) {
     url: urlEvents,
     data: form.serialize(), // Transforma el form en json
     success: function( result ) {
+      //Agrego el ticket(generado en printTicket) al html
       $( "#ticketPrinter" ).append(printTicket(result));
     }
   });
@@ -61,6 +63,7 @@ $("#create_event").submit(function(e) {
 //       "eventTime":$( "#4" ).val()
 //     },
 //     success: function( result ) {
+//       //Agrego el ticket(generado en printTicket) al html
 //       $( "#ticketPrinter" ).append(printTicket(result));
 //     }
 //   });
